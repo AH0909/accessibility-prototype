@@ -1,18 +1,5 @@
 import React, { Component } from 'react';
 
-// class RegularClass {}
-// class ComponentClass extends Component {}
-
-// const regularClassInstance = new RegularClass();
-// const ComponentClassInstance = new ComponentClass();
-
-// console.log('regularClassInstance', regularClassInstance);
-// console.log('ComponentClassInstance', ComponentClassInstance)
-
-
-
-
-
 class App extends Component {
     constructor() {
         super();
