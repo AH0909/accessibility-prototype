@@ -1,6 +1,10 @@
 import React, { Component } from 'react';
+import Table from "./components/Table"
 import Tabs from "./components/Tabs";
+import List from "./components/list"
+
 import "./App.css";
+import "./Table.css";
 
 class App extends Component {
     constructor() {
@@ -10,8 +14,7 @@ class App extends Component {
         this.toggleDisplayBio = this.toggleDisplayBio.bind(this);
     }
 
-
-    // set state of display bio to opposite value
+// set state of display bio to opposite value
     toggleDisplayBio() {
         this.setState({ displayBio: !this.state.displayBio })
     }
@@ -19,45 +22,50 @@ class App extends Component {
     render() {
         return (
             <div>
-                <Tabs>
-                    <div label="Home">
+                <Tabs> 
+                    <div label="Home"> 
                         <h1>Prototyping Accessibility Features</h1>
+                        <h2>Prototyping Accessibility Features</h2>
                         <p>Navigate this site to explore accessibility solutions for Gaming Admin.</p>
                         <p>This project is part of my MSc in Digital and Technology Solutions with Sheffield Hallam University,</p>
                         <p>For further information regarding this project click, 'More information'.</p>
-
-                        {
-                            this.state.displayBio ? (
-                                <div>
-                                    <p>Research question:</p>
-                                    <p>Objectives:</p>
-                                    <p>Sheffield Hallam contact information:</p>
-                                    <p>Slack: Amy.Haley</p>
-                                    <p>Email: amy.haley@skybettingandgaming.com</p>
-                                    <button onClick={this.toggleDisplayBio}>Show less</button>
-                                </div>
-                            ) : (
-                                    <div>
-                                        <button onClick={this.toggleDisplayBio}>More information</button>
-                                    </div>
-                                )
-                        }
-
-                        <p>Accessibility solutions showcased were selected using a questionnaire all Gaming Admin users were invited to complete.</p>
-                        <p>The table below shows the results from the questionnaire.</p>
-                        <p>Highlighted rows show that this solution is implemeted within this prototype.</p>
+                {
+                    this.state.displayBio ? (
+                        <div>
+                        <p>Research question:</p>
+                        <p>Objectives:</p>
+                        <p>Sheffield Hallam contact information:</p>
+                        <p>Slack: Amy.Haley</p>
+                        <p>Email: amy.haley@skybettingandgaming.com</p>
+                        <button onClick ={this.toggleDisplayBio}>Show less</button>
                     </div>
-                    <div label="View a list">
-                        Add a  <em>list</em>!
-       </div>
-                    <div label="View assets">
-                        Add <em>assets</em>!
-       </div>
-                </Tabs>
+                    ) : (
+                        <div>
+                            <button onClick ={this.toggleDisplayBio}>More information</button>
+                        </div>
+                    )
+                }
+                        <p>Accessibility solutions showcased were selected using a questionnaire all Gaming Admin users were invited to complete.</p>
+                        <p>Highlighted rows show that this solution is implemented within this prototype.</p>
+                        <Table />
+                        </div> 
+        {/* Second tab  */}
+       <div label="List"> 
+            <h1>Accessibility Reading</h1>
+            <List />
+        </div> 
 
+            {/* Third table */}
+            <div label="Media"> 
+            <h1>Media</h1>
+            </div> 
+            </Tabs> 
+ 
             </div>
         )
     }
 }
 
 export default App;
+
+//tab help from https://www.digitalocean.com/community/tutorials/react-tabs-component
