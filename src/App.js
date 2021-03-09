@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import Table from "./components/Table"
 import Tabs from "./components/Tabs";
+import List from "./components/list"
 
 import "./App.css";
 import "./Table.css";
@@ -15,7 +16,7 @@ class App extends Component {
 
 // set state of display bio to opposite value
     toggleDisplayBio() {
-        this.setState({ displayBio :!this.state.displayBio })
+        this.setState({ displayBio: !this.state.displayBio })
     }
 
     render() {
@@ -24,6 +25,7 @@ class App extends Component {
                 <Tabs> 
                     <div label="Home"> 
                         <h1>Prototyping Accessibility Features</h1>
+                        <h2>Prototyping Accessibility Features</h2>
                         <p>Navigate this site to explore accessibility solutions for Gaming Admin.</p>
                         <p>This project is part of my MSc in Digital and Technology Solutions with Sheffield Hallam University,</p>
                         <p>For further information regarding this project click, 'More information'.</p>
@@ -50,7 +52,7 @@ class App extends Component {
         {/* Second tab  */}
        <div label="List"> 
             <h1>Accessibility Reading</h1>
-            <p>Key websites to aid in accessibility</p>
+            <List />
         </div> 
 
             {/* Third table */}
