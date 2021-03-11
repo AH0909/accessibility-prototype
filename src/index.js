@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import Table from "./components/table"
 import List from "./components/list"
+import ColourPicker from "./components/colour-picker"
 
 
-import "../src/styles/app.css";
+import "../src/styles/App.css";
 import "../src/styles/table.css";
 
 const Tab = ({children, index, isSelected}) => (
@@ -84,6 +85,8 @@ const Tab = ({children, index, isSelected}) => (
   const App = () => (
     <Tabs>
       <Tab title="Welcome">
+        <div></div>
+        <ColourPicker />
         <h1>My Accessibility Research Project</h1>
         <h2>Improving accessibility in Sky Betting and Gaming's Internal Services</h2>
         <p>As a graduate in the Tech Academy, I am completing my Final Year Project on Accessibility.<br/>
@@ -91,7 +94,7 @@ const Tab = ({children, index, isSelected}) => (
         <br/>
         <strong> How can accessibility in Sky Betting and Gaming’s internal Admin services be improved?</strong><br/>
         <br/>
-        To do this, I asked users of Gaming Admin to give a rating on a range accessibility features.<br/>
+        To answer this question, I asked users of Gaming Admin to give a rating on a range accessibility features.<br/>
         A rating of 10 meant they wanted this solution and thought it would add great value.<br/>
         A rating of 1 meant they did not want this solution and thought it would add no value.<br/>
         <br/>
@@ -106,14 +109,18 @@ const Tab = ({children, index, isSelected}) => (
         
       </Tab>
       <Tab title="Reading">
-        <h2>Approachable</h2>
-        <p>Already know HTML, CSS and JavaScript? Read the guide and start building things in no time!</p>
+        <h2>Accessibility...who? what? why?</h2>
+        <h3>What is meant by accessibility?</h3>
+        <p>Description here....</p>
         <List />
       </Tab>
       <Tab title="Summary">
-        <h2>Vide</h2>
-        <p>Only 7.8 kB gzipped, no dependencies<br/>
-          Small API, small learning curve</p>
+        <h2>Video</h2>
+        <p>Here is a quick summary of my project</p>
+        <p> Insert video here</p>
+
+        <h2>Thank you</h2>
+        <p>Any questions please get in touch.</p>
 
       </Tab>
     </Tabs>
