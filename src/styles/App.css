@@ -33,3 +33,15 @@ h2 {
 [role="tabpanel"][aria-hidden="true"] {
   display: none;
 }
+
+#tab_0 {
+  background-color: #0fa3c1;
+}
+
+#tab_1 {
+  background-color: #CA3767;
+}
+
+#tab_2 {
+  background-color: #FF9900;
+}
