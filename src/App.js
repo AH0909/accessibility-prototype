@@ -3,8 +3,8 @@ import Table from "./components/Table"
 import Tabs from "./components/Tabs";
 import List from "./components/list"
 
-import "./App.css";
-import "./Table.css";
+import "../src/styles/App.css";
+import "../src/styles/Table.css";
 
 class App extends Component {
     constructor() {
