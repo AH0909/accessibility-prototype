@@ -1,6 +1,5 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import Table from "./components/table/index.js"
+import Table from "./components/table"
 import List from "./components/lists"
 import ColourPicker from "./components/colourPicker"
 
@@ -9,7 +8,7 @@ import Tab from "./components/tab"
 
 
 import "../src/styles/App.css";
-import "../src/styles/table.css";
+import "../src/styles/Table.css";
 
 const App = () => (
     <Tabs>
@@ -54,5 +53,6 @@ const App = () => (
       </Tab>
     </Tabs>
   )
+
+  export default App
   
-ReactDOM.render(<App/>, document.getElementById('root'))
