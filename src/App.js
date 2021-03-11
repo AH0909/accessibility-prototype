@@ -1,9 +1,10 @@
 import React from 'react';
 import Table from "./components/table"
 import List from "./components/lists"
-import ColourPicker from "./components/colourPicker"
-import IntroText from "./components/text.js"
-import { SolutionText } from "./components/text.js"
+import WithColourPicker from "./components/colourPicker"
+import IntroText from "./components/text/index.js"
+import { SolutionText } from "./components/text/index.js"
+import ContentWithColourPicker from "./components/Content/index.js"
 
 import Tabs from "./components/tabs"
 import Tab from "./components/tab"
@@ -12,15 +13,18 @@ import Tab from "./components/tab"
 import "../src/styles/App.css";
 import "../src/styles/Table.css";
 
+// const tableWithColourPicker = WithColourPicker(Table)
+
 const App = () => (
     <Tabs>
       <Tab title="Welcome">
         <div></div>
-        <ColourPicker />
-        <h1>My Accessibility Research Project</h1>
-        <IntroText />
-        <Table />
-        <SolutionText />
+
+        < ContentWithColourPicker />
+        {/* <WithColourPicker /> */}
+        {/* <IntroText /> */}
+        {/* {WithColourPicker(Table)} */}
+        {/* <SolutionText /> */}
       </Tab>
       {/* Second tab */}
       <Tab title="Reading">
