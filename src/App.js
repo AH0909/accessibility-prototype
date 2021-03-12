@@ -1,13 +1,12 @@
 import React from 'react';
 import Table from "./components/table"
 import List from "./components/lists"
-import WithColourPicker from "./components/colourPicker"
-import IntroText from "./components/text/index.js"
-import { SolutionText } from "./components/text/index.js"
 import ContentWithColourPicker from "./components/Content/index.js"
 
 import Tabs from "./components/tabs"
 import Tab from "./components/tab"
+
+import YoutubeEmbed from "./components/youtube";
 
 
 import "../src/styles/App.css";
@@ -17,7 +16,7 @@ import "../src/styles/Table.css";
 
 const App = () => (
     <Tabs>
-      <Tab title="Welcome">
+      <Tab title="Project">
         <div></div>
         < ContentWithColourPicker />
       </Tab>
@@ -29,12 +28,12 @@ const App = () => (
         <List />
       </Tab>
       {/* Final tab */}
-      <Tab title="Summary">
-        <h2>Video</h2>
-        <p>Here is a quick summary of my project</p>
-        <p> Insert video here</p>
-        <h2>Thank you</h2>
-        <p>Any questions please get in touch.</p>
+      <Tab title="Standards">
+        <h2>Introduction to Web Accessibility and W3C Standards</h2>
+        <div className="App">
+      <p>Add video summary</p>
+      <YoutubeEmbed embedId="20SHvU2PKsM" />
+    </div>
       </Tab>
     </Tabs>
   )
