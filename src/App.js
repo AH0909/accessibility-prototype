@@ -19,12 +19,7 @@ const App = () => (
     <Tabs>
       <Tab title="Welcome">
         <div></div>
-
         < ContentWithColourPicker />
-        {/* <WithColourPicker /> */}
-        {/* <IntroText /> */}
-        {/* {WithColourPicker(Table)} */}
-        {/* <SolutionText /> */}
       </Tab>
       {/* Second tab */}
       <Tab title="Reading">
