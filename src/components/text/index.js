@@ -7,9 +7,8 @@ class IntroText extends Component {
                 <h2>Improving accessibility in Sky Betting and Gaming's Internal Services</h2>
                 <p>As a graduate in the Tech Academy, I am completing my Final Year Project on Accessibility.<br />
                 The research question I will be answering is:<br />
-                    <br />
-                    <strong> How can accessibility in Sky Betting and Gaming’s internal Admin services be improved?</strong><br />
-                    <br />
+                <br />
+                <h2> How can accessibility in Sky Betting and Gaming’s internal Admin services be improved?</h2>
                 To answer this question, I asked users of Gaming Admin to give a rating on a range accessibility features.<br />
                 A rating of 10 meant they wanted this solution and thought it would add great value.<br />
                 A rating of 1 meant they did not want this solution and thought it would add no value.<br />
@@ -38,9 +37,8 @@ export class AccessibilityText extends Component {
     render() {
         return (
             <div>
-                <h2>Accessibility...who? what? why?</h2>
-                <h3>What is meant by accessibility?</h3>
-                <p>Description here....</p>
+                <h2>What is meant by accessibility?</h2>
+                <p>Accessibility in software engineering refers to making a site as useable as possible, by as many people as possible (MDN, 2020). </p>
             </div>
         )
     }
