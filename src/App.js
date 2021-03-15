@@ -26,10 +26,10 @@ const App = () => (
     <Tab title="Standards">
       <h2>Introduction to Web Accessibility and W3C Standards</h2>
       <W3Clogo />
-      <p>Add image summary</p>
+      <p>W3C's site logo</p>
       <div className="App">
         <YoutubeEmbed embedId="20SHvU2PKsM" />
-        <p>Add video summary</p>
+        <p>Introduction to Web Accessibility and W3C Standards.</p>
       </div>
     </Tab>
   </Tabs>
