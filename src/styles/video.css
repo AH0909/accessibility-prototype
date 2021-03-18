@@ -1,19 +1,40 @@
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin: 0;
-    display: block;
-    /* background-color: pink; */
-  }
+.justify-center{
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
 
+@media screen and (max-width: 853px){
+  .video-responsive {
+      overflow: hidden;
+      padding-bottom: 56.25%;
+      margin: 0;
+      display: block;
+    }
+  
   .video-responsive iframe {
-    left: 25%;
+    left: 0;
     right: 0;
     top: 0;
-    height: 50%;
-    width: 50%;
+    height: 100%;
+    width: 100%;
     position: absolute;
   }
+}
+
+@media screen and (min-width: 854px){
+  .video-responsive {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
   
+  .video-responsive iframe {
+    left: 0;
+    right: 0;
+    top: 0;
+    height: 480px;
+    width: 853px;
+    padding: 0px;
+  }
+}
