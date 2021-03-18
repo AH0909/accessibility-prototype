@@ -9,10 +9,12 @@ import W3Clogo from "./components/images/index.js"
 import { VideoText } from "./components/text"
 import YoutubeEmbed from "./components/youtube";
 import Contact from "./components/button";
+import Toggle from "./components/toggle";
 
 import "../src/styles/app.css";
 import "../src/styles/table.css";
 import '../src/styles/video.css';
+import "../src/styles/toggle.css";
 
 const App = () => (
   <Tabs>
@@ -21,6 +23,7 @@ const App = () => (
     </Tab>
     {/* Second tab */}
     <Tab title="Reading">
+    <Toggle />
       < AccessibilityText />
       <List />
     </Tab>
