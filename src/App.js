@@ -9,8 +9,8 @@ import W3Clogo from "./components/images/index.js"
 import { VideoText } from "./components/text"
 import YoutubeEmbed from "./components/youtube";
 
-import "../src/styles/App.css";
-import "../src/styles/Table.css";
+import "../src/styles/app.css";
+import "../src/styles/table.css";
 import '../src/styles/video.css';
 
 const App = () => (
