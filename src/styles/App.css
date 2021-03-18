@@ -28,7 +28,7 @@ h2 {
   color: #000;
 }
 [role="tab"][aria-selected="true"] {
-  border-bottom-color: #fff;
+  border-bottom-color: red;
 }
 [role="tabpanel"] {
   padding: 0 0.5em;
@@ -42,7 +42,7 @@ h2 {
 }
 
 #tab_1 {
-  background-color: #CA3767;
+  background-color: #FFB6C1;
 }
 
 #tab_2 {
