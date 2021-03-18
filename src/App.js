@@ -8,6 +8,7 @@ import Tabs from "./components/tabs"
 import W3Clogo from "./components/images/index.js"
 import { VideoText } from "./components/text"
 import YoutubeEmbed from "./components/youtube";
+import Contact from "./components/button";
 
 import "../src/styles/app.css";
 import "../src/styles/table.css";
@@ -28,8 +29,9 @@ const App = () => (
       <h2>Introduction to Web Accessibility and W3C Standards</h2>
       <W3Clogo />
       < VideoText />
-        <YoutubeEmbed aria-label= "video" embedId="20SHvU2PKsM" />
-        <p>Introduction to Web Accessibility and W3C Standards.</p>
+      <Contact />
+      <YoutubeEmbed aria-label="video" embedId="20SHvU2PKsM" />
+      <p>Introduction to Web Accessibility and W3C Standards.</p>
     </Tab>
   </Tabs>
 )
