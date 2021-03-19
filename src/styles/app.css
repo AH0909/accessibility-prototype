@@ -52,3 +52,12 @@ h2 {
 .button-container {
   margin: 10px;
 }
+
+a {
+  background-color: white;
+  padding: 5px, 0px, 2px, 0px;
+}
+
+dd {
+  padding: 5px;
+}
