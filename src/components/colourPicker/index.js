@@ -19,7 +19,6 @@ const WithColourPicker = (ChildComponent) => {
       const stylesObj = {
         background: this.state.color
       };
-  console.log(ChildComponent)
       return (
         <div style={stylesObj} className="container">
           <div className="box">
