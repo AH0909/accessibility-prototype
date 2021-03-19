@@ -27,7 +27,7 @@ const App = () => {
   const themeMode = theme === 'light' ? lightTheme : darkTheme;
 
   return (
-    <ThemeProvider theme={themeMode}>
+    <ThemeProvider tabindex="1" theme={themeMode}>
       <>
         <GlobalStyles />
         <div className="App">
