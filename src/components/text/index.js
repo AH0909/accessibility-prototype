@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 
-class IntroText extends Component {
+export class IntroText extends Component {
     render() {
         return (
             <div>
@@ -8,7 +8,8 @@ class IntroText extends Component {
                 <p>As a graduate in the Tech Academy, I am completing my Final Year Project on Accessibility.<br />
                 The research question I will be answering is:<br />
                 <br />
-                <h2> How can accessibility in Sky Betting and Gaming’s internal Admin services be improved?</h2>
+                <strong> How can accessibility in Sky Betting and Gaming’s internal Admin services be improved?</strong><br />
+                <br />
                 To answer this question, I asked users of Gaming Admin to give a rating on a range accessibility features.<br />
                 A rating of 10 meant they wanted this solution and thought it would add great value.<br />
                 A rating of 1 meant they did not want this solution and thought it would add no value.<br />
@@ -59,8 +60,3 @@ For colour, "Understanding Success Criterion 1.4.3: Contrast (Minimum)" is relev
         )
     }
 }
-
-
-
-
-export default IntroText; 
