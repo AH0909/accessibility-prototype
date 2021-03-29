@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
 
+// renders a list
 class List extends Component {
     render() {
         return (
-            <body>
+            <div>
                 <h2>Useful websites</h2>
                 From my research I found the following pages useful.
                 <dl>
@@ -20,7 +21,7 @@ class List extends Component {
                     <dd> This site has excellent examples of accessibility features </dd>
                     <br />
                 </dl>
-            </body>
+            </div>
         )
     }
 }

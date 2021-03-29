@@ -3,8 +3,8 @@ import React, { Component } from 'react';
 class Table extends Component {
     render() {
         return (
-            <div>
-                               <table>
+                    <table className= 'table of results'>
+                    <tbody>
                     <tr>
                         <th>Accessibility feature</th>
                         <th>Range of ratings</th>
@@ -59,8 +59,8 @@ class Table extends Component {
                         <td>4.21</td>
                         <td>8</td>
                     </tr>
+                    </tbody>
                     </table>
-            </div>
         )
     }
 }

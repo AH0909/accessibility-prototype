@@ -4,6 +4,7 @@
   position: relative;
 }
 
+/* smaller screen sizes */
 @media screen and (max-width: 853px){
   .video-responsive {
       overflow: hidden;
@@ -22,6 +23,7 @@
   }
 }
 
+/* larger screen sizes */
 @media screen and (min-width: 854px){
   .video-responsive {
     margin: 0;
