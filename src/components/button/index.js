@@ -11,6 +11,7 @@ const Button = (props) => {
     )
 }
 
+// renders button with open and closed states
 class Contact extends React.Component {
     constructor(props) {
         super(props);
@@ -27,8 +28,8 @@ class Contact extends React.Component {
 
     render() {
         return (
-            <div class="button-container">
-                <Button
+            <div className="button-container">
+                <Button className="contactButton"
                     name={this.state.isOpen ? "Hide contact information" : "Show contact information"}
                     toggle={this.toggle}
                 />
@@ -48,6 +49,5 @@ class Contact extends React.Component {
         );
     }
 }
-
 
 export default Contact;

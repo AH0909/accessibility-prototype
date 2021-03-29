@@ -4,14 +4,17 @@ import List from "./components/lists"
 import { ThemeProvider } from "styled-components";
 
 import { AccessibilityText } from "./components/text/index.js"
+import { SolutionText } from "./components/text/index.js"
+import { IntroText } from "./components/text/index.js"
 import { GlobalStyles } from "./components/darkMode/globalStyles.js";
 import { lightTheme, darkTheme } from "./components/darkMode/themes.js";
 import { useDarkMode } from "./components/darkMode/useDarkMode.js"
 
 import Toggle from "./components/darkMode/toggler.js"
-import ContentWithColourPicker from "./components/content/index.js"
+// import ContentWithColourPicker from "./components/content/index.js"
 import Tab from "./components/tab"
 import Tabs from "./components/tabs"
+import Table from "./components/table"
 import W3Clogo from "./components/images/index.js"
 import { VideoText } from "./components/text"
 import YoutubeEmbed from "./components/youtube";
@@ -33,15 +36,18 @@ const App = () => {
         <div className="App">
           <Toggle theme={theme} toggleTheme={themeToggler} />
           <Tabs>
+            {/* First tab */}
             <Tab title="Project">
-              < ContentWithColourPicker />
+            <IntroText />
+                <Table />
+                <SolutionText />
             </Tab>
             {/* Second tab */}
             <Tab title="Reading">
               < AccessibilityText />
               <List />
             </Tab>
-            {/* Final tab */}
+            {/* Third tab */}
             <Tab title="Standards">
               <h2>Introduction to Web Accessibility and W3C Standards</h2>
               <W3Clogo />
@@ -54,7 +60,6 @@ const App = () => {
         </div>
       </>
     </ThemeProvider>
-
   );
 };
 

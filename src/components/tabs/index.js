@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
   
   class Tabs extends React.Component {
     constructor(props) {
