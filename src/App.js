@@ -11,7 +11,6 @@ import { lightTheme, darkTheme } from "./components/darkMode/themes.js";
 import { useDarkMode } from "./components/darkMode/useDarkMode.js"
 
 import Toggle from "./components/darkMode/toggler.js"
-// import ContentWithColourPicker from "./components/content/index.js"
 import Tab from "./components/tab"
 import Tabs from "./components/tabs"
 import Table from "./components/table"

@@ -1,5 +1,4 @@
 import React from 'react';
-// import { render, screen } from '@testing-library/react';
 import ReactDOM from 'react-dom';
 import { IntroText } from './index.js';
 import { SolutionText } from './index.js'
@@ -26,7 +25,3 @@ it('renders Video text', () => {
   ReactDOM.render(<VideoText />, div);
 });
 
-// it('gives expected text', () => {
-//   render(<IntroText/>);
-//   expect(screen.getByText('Improving accessibility in Sky Betting')).toBeInTheDocument();
-// });
