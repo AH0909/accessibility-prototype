@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 class List extends Component {
     render() {
         return (
-            <div>
+            <div className="websiteList">
                 <h2>Useful websites</h2>
                 From my research I found the following pages useful.
                 <dl>

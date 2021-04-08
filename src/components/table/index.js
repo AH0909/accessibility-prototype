@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Table extends Component {
     render() {
         return (
-                    <table className= 'table of results'>
+                    <table className= "results">
                     <tbody>
                     <tr>
                         <th>Accessibility feature</th>
