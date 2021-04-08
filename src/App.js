@@ -18,6 +18,7 @@ import W3Clogo from "./components/images/index.js"
 import { VideoText } from "./components/text"
 import YoutubeEmbed from "./components/youtube";
 import Contact from "./components/button";
+import NavInfo from "./components/navigation";
 
 
 import "../src/styles/app.css";
@@ -34,6 +35,7 @@ const App = () => {
         <GlobalStyles />
         <div className="App">
           <Toggle theme={theme} toggleTheme={themeToggler} />
+          <NavInfo />
           <Tabs>
             {/* First tab */}
             <Tab title="Project">
