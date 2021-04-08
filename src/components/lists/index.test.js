@@ -1,8 +1,10 @@
 import React from 'react';
 import List from './index.js';
-import ReactDOM from 'react-dom';
+import enzyme from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
-it('renders a list', () => {
-  const div = document.createElement('List');
-  ReactDOM.render(<List />, div);
+it('renders List component', () => {
+  enzyme.configure({ adapter: new Adapter() })
+  const contact = enzyme.shallow(<List/>)
+  expect(contact.exists(".websiteList")).toBe(true)
 });

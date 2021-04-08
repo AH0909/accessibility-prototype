@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 export class IntroText extends Component {
     render() {
         return (
-            <div>
+            <div className= "introText">
                 <h2>Improving accessibility in Sky Betting and Gaming's Internal Services</h2>
                 <p>As a graduate in the Tech Academy, I am completing my Final Year Project on Accessibility.<br />
                 The research question I will be answering is:<br />
@@ -22,7 +22,7 @@ export class IntroText extends Component {
 export class SolutionText extends Component {
     render() {
         return (
-            <div>
+            <div className= "solutionText">
                 <h2>Prioritised solutions</h2>
                 <p>After analysising the results by taking the 'range of ratings' and the 'average rating' into consideration, I prioritised the accessibility features. <br />
           In the time period between the questionnaire and focus group, I implemented as many solutions as possible, starting with the ability to navigate with a keyboard '1'. <br />
@@ -37,7 +37,7 @@ export class SolutionText extends Component {
 export class AccessibilityText extends Component {
     render() {
         return (
-            <div>
+            <div classname= "accessibilityText" >
                 <h2>What is meant by accessibility?</h2>
                 <p>Accessibility in software engineering refers to making a site as useable as possible, by as many people as possible (MDN, 2020). </p>
             </div>
@@ -49,7 +49,7 @@ export class AccessibilityText extends Component {
 export class VideoText extends Component {
     render() {
         return (
-            <div>
+            <div className="videoText">
                 <p>W3C, known as the World Wide Web Consortium, is an international standards organisation for the Web.<br/>
 W3C have produced a set of standards for accessibility named Web Content Accessibility Guidelines (WCAG).<br/>
 The most recent set of guidelines are WCAG 2.1 published in June 2018.   </p>

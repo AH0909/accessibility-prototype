@@ -1,32 +1,31 @@
 import React from 'react';
-// import { render, screen } from '@testing-library/react';
-import ReactDOM from 'react-dom';
 import { IntroText } from './index.js';
 import { SolutionText } from './index.js'
-import { AccessibilityText } from './index.js'
+// import { AccessibilityText } from './index.js'
 import { VideoText } from './index.js'
+import enzyme from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 it('renders Introduction text', () => {
-  const div = document.createElement('IntroText');
-  ReactDOM.render(<IntroText />, div);
+  enzyme.configure({ adapter: new Adapter() })
+  const contact = enzyme.shallow(<IntroText />)
+  expect(contact.exists(".introText")).toBe(true)
 });
 
 it('renders Solution text', () => {
-  const div = document.createElement('SolutionText');
-  ReactDOM.render(<SolutionText />, div);
+  enzyme.configure({ adapter: new Adapter() })
+  const contact = enzyme.shallow(<SolutionText />)
+  expect(contact.exists(".solutionText")).toBe(true)
 });
 
-it('renders Accessibility text', () => {
-  const div = document.createElement('AccessibilityText');
-  ReactDOM.render(<AccessibilityText />, div);
-});
+// it('renders Accessibility text', () => {
+//   enzyme.configure({ adapter: new Adapter() })
+//   const contact = enzyme.shallow(<AccessibilityText />)
+//   expect(contact.exists(".accessibilityText")).toBe(true)
+// });
 
 it('renders Video text', () => {
-  const div = document.createElement('VideoText');
-  ReactDOM.render(<VideoText />, div);
+  enzyme.configure({ adapter: new Adapter() })
+  const contact = enzyme.shallow(<VideoText />)
+  expect(contact.exists(".videoText")).toBe(true)
 });
-
-// it('gives expected text', () => {
-//   render(<IntroText/>);
-//   expect(screen.getByText('Improving accessibility in Sky Betting')).toBeInTheDocument();
-// });

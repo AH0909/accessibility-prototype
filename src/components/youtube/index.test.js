@@ -1,8 +1,10 @@
 import React from 'react';
 import YoutubeEmbed from './index.js';
-import ReactDOM from 'react-dom';
+import enzyme from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
-it('renders a Youtube video', () => {
-  const div = document.createElement('YoutubeEmbed');
-  ReactDOM.render(<YoutubeEmbed />, div);
+it('renders video component', () => {
+  enzyme.configure({ adapter: new Adapter() })
+  const contact = enzyme.shallow(<YoutubeEmbed/>)
+  expect(contact.exists(".video-responsive")).toBe(true)
 });
