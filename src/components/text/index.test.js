@@ -1,7 +1,6 @@
 import React from 'react';
 import { IntroText } from './index.js';
 import { SolutionText } from './index.js'
-// import { AccessibilityText } from './index.js'
 import { VideoText } from './index.js'
 import enzyme from 'enzyme';
 import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
@@ -17,12 +16,6 @@ it('renders Solution text', () => {
   const contact = enzyme.shallow(<SolutionText />)
   expect(contact.exists(".solutionText")).toBe(true)
 });
-
-// it('renders Accessibility text', () => {
-//   enzyme.configure({ adapter: new Adapter() })
-//   const contact = enzyme.shallow(<AccessibilityText />)
-//   expect(contact.exists(".accessibilityText")).toBe(true)
-// });
 
 it('renders Video text', () => {
   enzyme.configure({ adapter: new Adapter() })
