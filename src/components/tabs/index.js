@@ -36,11 +36,13 @@ import React from 'react';
       else if (e.which === 39) this.nextTab(tab)
     }
     render () {
-      return (<div>
+      return (
+      <div>
         <ul role="tablist">
           {this.tabs.map((tab, i) => (
-            <li role="presentation">
-              <a id={`tab_${i}`}
+            <li key={`li_tab_${i}`} role="presentation">
+              <a key={`tab_${i}`}
+                 id={`tab_${i}`}
                  href={`#tabpanel_${i}`}
                  role="tab"
                  aria-controls={`tab_${i}`}

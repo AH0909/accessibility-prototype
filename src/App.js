@@ -38,24 +38,24 @@ const App = () => {
           <NavInfo />
           <Tabs>
             {/* First tab */}
-            <Tab title="Project">
-            <IntroText />
-                <Table />
-                <SolutionText />
+            <Tab key="Project" title="Project">
+              <IntroText />
+              <Table />
+              <SolutionText />
             </Tab>
             {/* Second tab */}
-            <Tab title="Reading">
-              < AccessibilityText />
+            <Tab key="Reading" title="Reading">
+              <AccessibilityText />
               <List />
             </Tab>
             {/* Third tab */}
-            <Tab title="Standards">
+            <Tab key="Standards" title="Standards">
               <h2>Introduction to Web Accessibility and W3C Standards</h2>
               <W3Clogo />
-              < VideoText />
+              <VideoText/>
               <Contact />
               <YoutubeEmbed aria-label="video" embedId="20SHvU2PKsM" />
-              <p> A Youtube Video to show you an Introduction to Web Accessibility and W3C Standards.</p>
+              <p>A Youtube Video to show you an Introduction to Web Accessibility and W3C Standards.</p>
             </Tab>
           </Tabs>
         </div>

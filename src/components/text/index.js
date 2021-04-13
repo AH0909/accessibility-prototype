@@ -37,7 +37,7 @@ export class SolutionText extends Component {
 export class AccessibilityText extends Component {
     render() {
         return (
-            <div classname= "accessibilityText" >
+            <div className= "accessibilityText" >
                 <h2>What is meant by accessibility?</h2>
                 <p>Accessibility in software engineering refers to making a site as useable as possible, by as many people as possible (MDN, 2020). </p>
             </div>
