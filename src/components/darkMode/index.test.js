@@ -1,8 +1,17 @@
 import React from 'react';
 import Toggle from './toggler.js';
-import ReactDOM from 'react-dom';
+import enzyme from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
-it('renders a toggle', () => {
-  const div = document.createElement('Toggle');
-  ReactDOM.render(<Toggle />, div);
+it('renders the toggle', () => {
+  enzyme.configure({ adapter: new Adapter() })
+  const toggle = enzyme.shallow(<Toggle/>)
+  expect(toggle.exists(".toggleButton")).toBe(true)
+});
+
+it('matches snapshot', () => {
+  const wrapper = enzyme.mount(
+    <Toggle/>,
+  );
+  expect(wrapper).toMatchSnapshot();
 });

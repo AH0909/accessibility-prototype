@@ -8,3 +8,10 @@ it('renders List component', () => {
   const contact = enzyme.shallow(<List/>)
   expect(contact.exists(".websiteList")).toBe(true)
 });
+
+it('matches snapshot', () => {
+  const wrapper = enzyme.mount(
+    <List/>
+  );
+  expect(wrapper).toMatchSnapshot();
+});

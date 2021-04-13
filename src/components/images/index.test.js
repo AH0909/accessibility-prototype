@@ -8,3 +8,10 @@ it('renders W3C image component', () => {
   const contact = enzyme.shallow(<W3Clogo/>)
   expect(contact.exists(".img-fluid")).toBe(true)
 });
+
+it('matches snapshot', () => {
+  const wrapper = enzyme.mount(
+    <W3Clogo/>
+  );
+  expect(wrapper).toMatchSnapshot();
+});

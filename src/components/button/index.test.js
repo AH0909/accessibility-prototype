@@ -8,3 +8,10 @@ it('renders contact button', () => {
   const contact = enzyme.shallow(<Contact/>)
   expect(contact.exists(".contactButton")).toBe(true)
 });
+
+it('should render contact button', () => {
+  const wrapper = enzyme.mount(
+      <Contact>Test</Contact>,
+  );
+  expect(wrapper).toMatchSnapshot();
+});

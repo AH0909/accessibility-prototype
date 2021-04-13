@@ -29,7 +29,7 @@ class NavInfo extends React.Component {
     render() {
         return (
             <div className="button-container">
-                <Button className="navButton"
+                <Button className="navigationButton"
                     name={this.state.isOpen ? "Hide Navigation Information" : "Navigation Information"}
                     toggle={this.toggle}
                 />

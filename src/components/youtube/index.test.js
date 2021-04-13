@@ -5,6 +5,14 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 it('renders video component', () => {
   enzyme.configure({ adapter: new Adapter() })
-  const contact = enzyme.shallow(<YoutubeEmbed/>)
-  expect(contact.exists(".video-responsive")).toBe(true)
+  const video = enzyme.shallow(<YoutubeEmbed/>)
+  expect(video.exists(".video-responsive")).toBe(true)
+  expect(video).toHaveLength(1)
+});
+
+it('matches snapshot', () => {
+  const wrapper = enzyme.mount(
+    <YoutubeEmbed/>,
+  );
+  expect(wrapper).toMatchSnapshot();
 });
