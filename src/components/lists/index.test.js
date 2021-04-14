@@ -5,8 +5,8 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 it('renders List component', () => {
   enzyme.configure({ adapter: new Adapter() })
-  const contact = enzyme.shallow(<List/>)
-  expect(contact.exists(".websiteList")).toBe(true)
+  const list = enzyme.shallow(<List/>)
+  expect(list.exists(".websiteList")).toBe(true)
 });
 
 it('matches snapshot', () => {

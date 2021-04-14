@@ -5,8 +5,8 @@ import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
 it('renders W3C image component', () => {
   enzyme.configure({ adapter: new Adapter() })
-  const contact = enzyme.shallow(<W3Clogo/>)
-  expect(contact.exists(".img-fluid")).toBe(true)
+  const image = enzyme.shallow(<W3Clogo/>)
+  expect(image.exists(".img-fluid")).toBe(true)
 });
 
 it('matches snapshot', () => {

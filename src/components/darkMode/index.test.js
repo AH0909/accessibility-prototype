@@ -7,6 +7,8 @@ it('renders the toggle', () => {
   enzyme.configure({ adapter: new Adapter() })
   const toggle = enzyme.shallow(<Toggle/>)
   expect(toggle.exists(".toggleButton")).toBe(true)
+  expect(toggle.exists(".sun")).toBe(true)
+  expect(toggle.exists(".moon")).toBe(false)
 });
 
 it('matches snapshot', () => {
