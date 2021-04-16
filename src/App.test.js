@@ -1,9 +1,17 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
 import App from './App';
+import enzyme from 'enzyme';
+import Adapter from '@wojtekmaj/enzyme-adapter-react-17';
 
-// smoke test
+
 it('renders without crashing', () => {
-  const div = document.createElement('div');
-  ReactDOM.render(<App />, div);
+  enzyme.configure({ adapter: new Adapter() })
+  enzyme.shallow(<App/>)
+});
+
+it('matches snapshot', () => {
+  const wrapper = enzyme.mount(
+    <App/>,
+  );
+  expect(wrapper).toMatchSnapshot();
 });
