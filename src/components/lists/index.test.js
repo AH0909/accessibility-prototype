@@ -9,6 +9,13 @@ it('renders List component', () => {
   expect(list.exists(".websiteList")).toBe(true)
 });
 
+//contains anchor link
+it('renders anchor component', () => {
+  enzyme.configure({ adapter: new Adapter() })
+  const list = enzyme.shallow(<List/>)
+  expect(list.exists('a[href="https://www.w3.org/WAI/standards-guidelines/wcag/"]')).toBe(true)
+});
+
 it('matches snapshot', () => {
   const wrapper = enzyme.mount(
     <List/>
