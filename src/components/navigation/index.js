@@ -1,9 +1,9 @@
 import React from 'react';
 
+// navigation information button
 const Button = (props) => {
     return (
         <button
-            className="btn pink darken-4"
             onClick={props.toggle}
         >
             {props.name}
@@ -26,6 +26,7 @@ class NavInfo extends React.Component {
         }));
     }
 
+// state changes the description of the button
     render() {
         return (
             <div className="button-container">
@@ -35,7 +36,7 @@ class NavInfo extends React.Component {
                 />
 
                 {this.state.isOpen &&
-                    <div class="card-panel pink darken-2">
+                    <div>
                         <span class="white-text">
                             <p>
                                 Tab = navigate forwards <br/>

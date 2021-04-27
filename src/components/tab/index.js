@@ -1,5 +1,6 @@
 import React from 'react';
 
+// tab information including aria role
 const Tab = ({ children, index, isSelected }) => {
     return (
     <div id={`tabpanel_${index}`}

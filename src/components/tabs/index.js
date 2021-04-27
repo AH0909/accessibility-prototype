@@ -12,31 +12,43 @@ class Tabs extends React.Component {
     this.handleClick = this.handleClick.bind(this)
     this.handleKeyup = this.handleKeyup.bind(this)
   }
+  // update to the active tab
   componentDidUpdate() {
     this.activeLink.focus()
   }
+
+  // selected tab
   selectTab (tab) {
     this.setState({selected: tab})
   }
+
+  // select the previous tab and update the index
   previousTab (tab) {
     const index = this.tabs.indexOf(tab)
     if (index > 0) this.selectTab(this.tabs[index - 1])
   }
-  //key driven next tab
+
+  // key driven next tab
   nextTab (tab) {
     const index = this.tabs.indexOf(tab)
     if (index < this.tabs.length - 1) this.selectTab(this.tabs[index + 1])
   }
+
+  // allow the user to click a tab
   handleClick (e, tab) {
     e.preventDefault()
     this.selectTab(tab)
   }
+
+  // allow navigation with the keyboard
   handleKeyup (e, tab) {
     e.preventDefault()
     if (e.which === 13) this.selectTab(tab)
     else if (e.which === 37) this.previousTab(tab)
     else if (e.which === 39) this.nextTab(tab)
   }
+
+  // redner tabs
   render () {
     return (
     <div>

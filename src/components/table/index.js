@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// table of results
 class Table extends Component {
     render() {
         return (

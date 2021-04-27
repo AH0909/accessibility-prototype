@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from "styled-components";
 
+// toggle button 
 const Button = styled.button`
   border: 2px solid ${({ theme }) => theme.toggleBorder};
   border-radius: 30px;
@@ -22,18 +23,21 @@ const Button = styled.button`
 
 `;
 
+// sun svg in toggle button
 const Sun = styled.svg`
  height: 100%;
  width: 1.5rem;
  transition: all 0.7s linear;
 `;
 
+// moon svg in toggle button
 const Moon = styled.svg`
   height: 100%;
   width: 1.5rem;
   transition: all 0.7s linear;
 `
 
+// set the toggle theme to be light or dark returning the moon or sun
 const Toggle = ({ theme, toggleTheme }) => {
   return (
     <Button className="toggleButton" onClick={toggleTheme}>
