@@ -1,5 +1,6 @@
 import React from "react";
 
+// styling and link to the Youtube video
 const YoutubeEmbed = ({ embedId }) => (
   <div className= "justify-center">
   <div className="video-responsive">

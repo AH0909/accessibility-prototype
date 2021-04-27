@@ -9,7 +9,6 @@ it('renders List component', () => {
   expect(list.exists(".websiteList")).toBe(true)
 });
 
-//contains anchor link
 it('renders anchor component', () => {
   enzyme.configure({ adapter: new Adapter() })
   const list = enzyme.shallow(<List/>)

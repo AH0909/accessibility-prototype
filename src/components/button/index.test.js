@@ -9,7 +9,7 @@ it('renders contact button', () => {
   expect(contact.exists(".contactButton")).toBe(true)
 });
 
-it('should render contact button', () => {
+it('should render the contact button', () => {
   const wrapper = enzyme.mount(
       <Contact>Test</Contact>,
   );

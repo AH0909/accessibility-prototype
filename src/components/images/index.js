@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// display the W3C logo
 class W3Clogo extends Component {
     render() {
         return (

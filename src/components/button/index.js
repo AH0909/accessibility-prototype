@@ -1,9 +1,9 @@
 import React from 'react';
 
+// show more or show less button
 const Button = (props) => {
     return (
         <button
-            className="btn pink darken-4"
             onClick={props.toggle}
         >
             {props.name}
@@ -25,7 +25,8 @@ class Contact extends React.Component {
             isOpen: !prevState.isOpen
         }));
     }
-
+    
+// states show different button description and content whether it is open or not
     render() {
         return (
             <div className="button-container">

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 
+// render text for the introduction
 export class IntroText extends Component {
     render() {
         return (
@@ -19,21 +20,23 @@ export class IntroText extends Component {
     }
 }
 
+// render text for the solution
 export class SolutionText extends Component {
     render() {
         return (
             <div className= "solutionText">
                 <h2>Prioritised solutions</h2>
-                <p>After analysising the results by taking the 'range of ratings' and the 'average rating' into consideration, I prioritised the accessibility features. <br />
-          In the time period between the questionnaire and focus group, I implemented as many solutions as possible, starting with the ability to navigate with a keyboard '1'. <br />
-          The focus group [was then able to give me feedback in order to further refine the accessibility features implemented]<br />
-          This prototype will then be used to create a report feeding back the answer to my research question to my team, Gaming Admin.
-        </p>
+                <p>After analysing the results by taking the 'range of ratings' and the 'average rating' into consideration, I prioritised the accessibility features. <br />
+                In the time period between the questionnaire and focus group, I implemented as many solutions as possible, starting with the ability to navigate with a keyboard '1'. <br />
+                The focus group was then able to give me feedback in order to further refine the accessibility features implemented<br />
+                This prototype will then be used to create a report feeding back the answer to my research question.
+                </p>
             </div>
         )
     }
 }
 
+// render text to describe accessibility
 export class AccessibilityText extends Component {
     render() {
         return (
@@ -45,17 +48,17 @@ export class AccessibilityText extends Component {
     }
 }
 
-
+// render text to describe the video
 export class VideoText extends Component {
     render() {
         return (
             <div className="videoText">
                 <p>W3C, known as the World Wide Web Consortium, is an international standards organisation for the Web.<br/>
-W3C have produced a set of standards for accessibility named Web Content Accessibility Guidelines (WCAG).<br/>
-The most recent set of guidelines are WCAG 2.1 published in June 2018.   </p>
-<p>As part of my project I have looked closely at navigation and colour.<br/>
-For navigation, "Success Criterion 3.2.3 Consistent Navigation" is relevant. <br/>
-For colour, "Understanding Success Criterion 1.4.3: Contrast (Minimum)" is relevant.</p>
+                3C have produced a set of standards for accessibility named Web Content Accessibility Guidelines (WCAG).<br/>
+                The most recent set of guidelines are WCAG 2.1 published in June 2018.   </p>
+                <p>As part of my project I have looked closely at navigation and colour.<br/>
+                For navigation, "Success Criterion 3.2.3 Consistent Navigation" is relevant. <br/>
+                For colour, "Understanding Success Criterion 1.4.3: Contrast (Minimum)" is relevant.</p>
             </div>
         )
     }
